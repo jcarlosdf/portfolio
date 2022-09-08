@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --primary: #197F5B;
+    --secondary: #EF9919;
+    --terciary: #F9F5F2;
+    --light: #FFFFFF;
+    --dark: #000;
+    --font: 'Poppins', sans-serif;
+    --regular: 400;
+    --semibold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    /* width: 100%; */
+}
+
+header {
+    background-color: var(--primary);
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    background-color: var(--light);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 3em solid var(--primary);
+    border-bottom: 5em solid transparent;
+    border-right: 3em solid var(--primary);
+    border-left: 2em solid transparent;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 5em solid transparent;
+    border-bottom: 3em solid var(--light);
+    border-right: 3em solid var(--light);
+    border-left: 2em solid transparent;
+}
+
+.burger_menu {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 1.8rem;
+    color: var(--light);
+    z-index: 1500;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: none;
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu li .activo {
+    background-color: antiquewhite;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.personal_photo {
+    margin-top: 100px;
+    position: relative;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.badge p {
+    font-size: 0.6em;
+    line-height: 10px;
+}
+
+.badge p+p {
+    color: var(--secondary);
+}
+
+.badge:nth-child(1) {
+    background-color: var(--light);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+
+}
+
+.badge:nth-child(2) {
+    background-color: var(--light);
+    position: absolute;
+    bottom: 7px;
+    right: -40px;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.personal_description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal_description h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: var(--semibold);
+    color: var(--light);
+    word-spacing: 0.1em;
+}
+
+.personal_description span {
+    color: var(--secondary);
+}
+
+.personal_description p {
+    color: var(--light);
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.socials {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.social {
+    background-color: var(--light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    background-size: cover;
+    width: 30px;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.inbox {
+    background-color: var(--terciary);
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.inbox h3 {
+    font-size: 32px;
+}
+
+.inbox .inbox_input {
+    position: relative;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+.inbox .inbox_input input {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(236, 236, 226);
+    font-family: var(--font);
+}
+
+.inbox .inbox_input button {
+    position: absolute;
+    right: 22px;
+    width: 200px;
+
+}
+
+.acerca {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 6rem;
+}
+
+.acerca h2 {
+    font-size: 2.5rem;
+}
+
+.acerca p {
+    border-left: solid 5px var(--primary);
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.acerca .cv {
+    margin: 30px auto;
+    width: 80%;
+    display: flex;
+}
+
+.acerca .cv button {
+    margin: 0 auto;
+    padding-right: 1.1em;
+    padding-left: 0.8em;
+    display: flex;
+    gap: 1em;
+}
+
+.estudios {
+    width: 75%;
+    margin: 100px auto;
+}
+
+.estudios h2 {
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.estudio {
+    background-color: var(--terciary);
+    width: 200px;
+    height: 220px;
+    margin: 30px auto;
+    padding: 1em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.estudio_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.estudio figcaption{
+    width: min-content;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: var(--semibold);
+}
+.estudio_detalle{
+    margin-top: 10px;
+    line-height: 20px;
+}
