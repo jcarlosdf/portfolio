@@ -80,7 +80,6 @@ header::after {
     height: 100vh;
     margin: 0 auto;
     background-color: var(--primary);
-    
     display: none;
     justify-content: center;
     align-items: center;
@@ -493,10 +492,9 @@ footer p{
 
 
 
-@media only screen and(min-width: 760px) {
+@media (min-width: 850px) {
     body{
-        max-width: 1380px;
-        background-color: rebeccapurple;
+        max-width: 1080px;
     }
     header::before {
         /* border-top: 3em solid var(--primary); */
@@ -512,4 +510,61 @@ footer p{
         border-left: 2em solid transparent;
     }
 
+    .burger_icon {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        position: relative;
+        top: 30px;
+        right: -150px;
+        z-index: 1000;
+        text-align: center;
+    }
+    .menu li {
+        display: inline;
+    } 
+    .menu li .activo {
+        color: var(--secondary);
+    }
+    .menu li a {
+        font-size: 0.8rem;
+        text-shadow: none;
+    }
+
+
+    .acerca p:last-of-type {
+        display: block;
+    }
+
+
+    .experiencia_container{
+        overflow-x: visible;
+    }
+    .experiencia{
+        transform: translateX(-50px);
+    }
+    .experiencias .tags_{
+        display: none;
+    } 
+
+
+    .portfolio_imgs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .img_portafolio img{
+        max-width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and(min-width: 560px) and(max-width: 760px) {
+    .personal_description p{
+        z-index: 2500;
+        color: var(--secondary);
+    }
 }
