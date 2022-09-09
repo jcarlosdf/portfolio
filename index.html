@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Portfolio1</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="burger_menu">&#9776</div>
+            <div class="burger_icon" id="burger_icon"><a href="#burger_icon">&#9776</a></div>
             <div class="menu">
                 <ul>
                     <li><a href="#inicio" class="activo">Inicio</a></li>
@@ -46,22 +48,31 @@
         </div>
     </header>
     <main>
-        <div class="inbox">
+        <section class="inbox">
             <h3>¿Te gustaría colaborar juntos creando productos increíbles?</h3>
             <div class="inbox_input">
                 <input type="text" placeholder="Deja tu correo aquí...">
                 <button class="btn">¡Listo!</button>
             </div>
-        </div>
-        <div class="acerca" id="acerca">
-            <h2>Acerca de mí</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat id. Eaque sequi ab quasi deserunt veritatis eum nesciunt soluta, ipsum, tempore optio ratione iste dolores rerum quia! Qui, a?</p>
+        </section>
+        <section class="acerca" id="acerca">
+            <h2 class="titulo">Acerca de mí</h2>
+            <div class="acerca_parrafos">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat id. Eaque sequi ab quasi
+                    deserunt veritatis eum nesciunt soluta, ipsum, tempore optio ratione iste dolores rerum quia! Qui, a?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat id. Eaque sequi ab quasi
+                    deserunt veritatis eum nesciunt soluta, ipsum, tempore optio ratione iste dolores rerum quia! Qui, a?
+                </p>
+            </div>
             <div class="cv">
                 <button class="btn"><i><img src="./Iconos/arrow.svg" alt="arrow"></i>Descargar CV</button>
             </div>
-        </div>
-        <div class="estudios">
-            <h2>Estudios</h2>
+        </section>
+        <section class="estudios">
+            <h2 class="titulo">Estudios</h2>
             <div class="estudio">
                 <div class="estudio_logo">
                     <figure><img src="./Logos-Imágenes/Tec.png" alt="Tec"></figure>
@@ -82,81 +93,126 @@
                     Programador full stack
                 </div>
             </div>
-        </div>
-        <div class="habilidades" id="habilidades">
-            <h2>Mis habilidades</h2>
+        </section>
+        <section class="habilidades" id="habilidades">
+            <h2 class="titulo">Mis habilidades</h2>
             <div class="habilidad">
                 <label for="webDesign">Web design</label>
-                <progress max="100" value="80" id="webDesign">80%</progress>    
+                <progress max="100" value="80" id="webDesign"></progress>
+                <span>80%</span>
             </div>
             <div class="habilidad">
                 <label for="interactionDesign">Interaction design</label>
-                <progress max="100" value="95" id="interactionDesign">95%</progress>    
+                <progress max="100" value="95" id="interactionDesign">95%</progress>
+                <span>95%</span>
             </div>
             <div class="habilidad">
                 <label for="ux">UX</label>
-                <progress max="100" value="90" id="ux">90%</progress>    
+                <progress max="100" value="90" id="ux">90%</progress>
+                <span>90%</span>
             </div>
             <div class="habilidad">
                 <label for="frameworks">Frameworks</label>
-                <progress max="100" value="75" id="frameworks">75%</progress>    
+                <progress max="100" value="75" id="frameworks">75%</progress>
+                <span>75%</span>
             </div>
-        </div>
-        <div class="experiencias" id="experiencia">
-            <div class="experiencia">
-                <figure><img src="./Logos-Imágenes/Wizeline.png" alt="Wizeline"></figure>
-                <figcaption>Interactive Design</figcaption>
-                <p>1 año</p>
-            </div>
-            <div class="experiencia">
-                <figure><img src="./Logos-Imágenes/Hootsuite.png" alt="Hootsuite"></figure>
-                <figcaption>Product designer</figcaption>
-                <p>1 año</p>
-            </div>
-            <div class="experiencia">
-                <figure><img src="./Logos-Imágenes/Google.png" alt="Google"></figure>
-                <figcaption>UI Engineer</figcaption>
-                <p>6 meses</p>
-            </div>
-            <div class="experiencia">
-                <figure><img src="./Logos-Imágenes/Google.png" alt="Google"></figure>
-                <figcaption>Frontend and UI Dev</figcaption>
-                <p>6 meses</p>
+        </section>
+        <section class="experiencias" id="experiencia">
+            <h2 class="titulo">Experiencia</h2>
+            <div class="experiencia_container">
+                <div class="experiencia">
+                    <figure><img src="./Logos-Imágenes/Wizeline.png" alt="Wizeline"></figure>
+                    <div class="experiencia_texto">
+                        <figcaption>Interactive Design</figcaption>
+                        <p>1 año</p>
+                    </div>
+                </div>
+                <div class="experiencia">
+                    <figure><img src="./Logos-Imágenes/Hootsuite.png" alt="Hootsuite"></figure>
+                    <div class="experiencia_texto">
+                        <figcaption>Product designer</figcaption>
+                        <p>1 año</p>
+                    </div>
+                </div>
+                <div class="experiencia">
+                    <figure><img src="./Logos-Imágenes/Google.png" alt="Google"></figure>
+                    <div class="experiencia_texto">
+                        <figcaption>UI Engineer</figcaption>
+                        <p>6 meses</p>
+                    </div>
+                </div>
+                <div class="experiencia">
+                    <figure><img src="./Logos-Imágenes/Google.png" alt="Google"></figure>
+                    <div class="experiencia_texto">
+                        <figcaption>Frontend and UI Dev</figcaption>
+                        <p>6 meses</p>
+                    </div>
+                </div>
             </div>
             <div class="tags_">
-                <div>&#60;</div>
-                <div>&#62;</div>
+                <div id="left-arrow" onclick="slider()">&#60;</div>
+                <div id="right-arrow" onclick="slider()">&#62;</div>
             </div>
-        </div>
-        <div class="portafolio" id="portfolio">
-            <h2>Mi portafolio</h2>
+        </section>
+        <section class="portafolio" id="portfolio">
+            <h2 class="titulo">Mi portafolio</h2>
             <div class="img_portafolio">
-                <img src="./Logos-Imágenes/Ejemplo 1.png" alt="portafolio1">
+                <img src="./Logos-Imágenes/Ejemplo2.png" alt="portafolio1">
             </div>
             <div class="img_portafolio">
-                <img src="./Logos-Imágenes/Ejemplo2.png" alt="portafolio2">
+                <img src="./Logos-Imágenes/Ejemplo 1.png" alt="portafolio2">
             </div>
             <div class="img_portafolio">
                 <img src="./Logos-Imágenes/Ejemplo 3.png" alt="portafolio3">
             </div>
-        </div>
-        <div class="contactos" id="contacto">
-            <h2>Contacto</h2>
-            <div class="contacto">
-                <figure><img src="./Iconos/phone.svg" alt="phone"></figure>
-                <figcaption>Número celular</figcaption>
-                <p>+593 998 875 509</p>
+        </section>
+        <section class="contactos" id="contacto">
+            <h2 class="titulo">Contacto</h2>
+            <div class="contacto_body">
+                <div class="contacto">
+                    <figure><img src="./Iconos/phone.svg" alt="phone"></figure>
+                    <div class="contacto_texto">
+                        <figcaption>Número celular</figcaption>
+                        <p>+593 998 875 509</p>
+                    </div>
+                </div>
+                <div class="contacto">
+                    <figure><img src="./Iconos/mail.svg" alt="mail"></figure>
+                    <div class="contacto_texto">
+                        <figcaption>Email</figcaption>
+                        <p>example@corporativo.com</p>
+                    </div>
+                </div>
             </div>
-            <div class="contacto">
-                <figure><img src="./Iconos/mail.svg" alt="mail"></figure>
-                <figcaption>Email</figcaption>
-                <p>example@corporativo.com</p>
-            </div>
-        </div>  
+        </section>
     </main>
     <footer>
         <h3>Aldo Abarca</h3>
-        <p>Hecho con  en Academlo</p>
+        <p>Hecho con ❤ en Academlo</p>
     </footer>
+
+    <script>
+        const leftArrow = document.querySelector(".experiencias .tags_ div:first-child");
+        const rightArrow = document.querySelector(".experiencias .tags_ div:last-child");
+        const experiencias = document.querySelector(".experiencia");
+        function slider(){
+            // if(arrow.id == "left-arrow"){
+            //     // alert("left")
+            //     experiencias.style.transform = "translateX(130px)"
+            // }
+            // if(arrow.id == "right-arrow"){
+            //     experiencias.style.transform = "translateX(0)"
+            // }
+            // alert("right")
+            if(experiencias.classList.contains("experiencia")){
+                experiencias.classList.remove("experiencia");
+                experiencias.classList.add("experiencia_slider");
+            }else{
+                experiencias.classList.remove("experiencia_slider");
+                experiencias.classList.add("experiencia");
+            }
+        }
+    </script>
 </body>
+
 </html>
